@@ -1,0 +1,678 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE Ontology [
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/dmitry/ontologies/2023/8/untitled-ontology-3"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     ontologyIRI="http://www.semanticweb.org/dmitry/ontologies/2023/8/untitled-ontology-3">
+    <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#Block"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Inventory"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Inventory_of_possible_items"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Item"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pickaxe"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Resource"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sword"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#bedrock"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#coal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#coal_ore"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#cobblestone"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#diamond"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#diamond_ore"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#diamond_pickaxe"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#diamond_sword"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#dirt"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#furnance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#gold"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#gold_ore"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#gold_pickaxe"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#gold_sword"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#grass"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#iron"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#iron_ore"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#iron_pickaxe"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#iron_sword"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#planks"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#seed"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#stick"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#stone_pickaxe"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#stone_sword"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#string"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#wheet"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#wood"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#wooden_pickaxe"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#wooden_sword"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#workbench"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#can_be_crafted"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#can_be_melted_down"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#can_craft_to"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#can_meltdown_to"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#bedrock"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#coal"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#coal_ore"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#cobblestone"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#diamond"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#diamond_ore"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#diamond_sword"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#dirt"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#furnance"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#gold"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#gold_ore"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#gold_sword"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#grass"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#iron"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#iron_ore"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#iron_sword"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#planks"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#seed"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#stick"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#stone_sword"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#string"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#wheet"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#wood"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#wooden_sword"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#workbench"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#Inventory_of_possible_items"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#can_be_crafted"/>
+            <Class IRI="#Inventory"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="#Block"/>
+        <Class IRI="#Item"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Inventory"/>
+        <Class IRI="#Item"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Inventory_of_possible_items"/>
+        <Class IRI="#Inventory"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pickaxe"/>
+        <Class IRI="#Item"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Resource"/>
+        <Class IRI="#Item"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sword"/>
+        <Class IRI="#Item"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#bedrock"/>
+        <Class IRI="#Block"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#coal"/>
+        <Class IRI="#Resource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#coal_ore"/>
+        <Class IRI="#Block"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#cobblestone"/>
+        <Class IRI="#Block"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#diamond"/>
+        <Class IRI="#Resource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#diamond_ore"/>
+        <Class IRI="#Block"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#diamond_pickaxe"/>
+        <Class IRI="#Pickaxe"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#diamond_sword"/>
+        <Class IRI="#Sword"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#dirt"/>
+        <Class IRI="#Block"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#furnance"/>
+        <Class IRI="#Block"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#gold"/>
+        <Class IRI="#Resource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#gold_ore"/>
+        <Class IRI="#Block"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#gold_pickaxe"/>
+        <Class IRI="#Pickaxe"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#gold_sword"/>
+        <Class IRI="#Sword"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#grass"/>
+        <Class IRI="#Block"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#iron"/>
+        <Class IRI="#Resource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#iron_ore"/>
+        <Class IRI="#Block"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#iron_pickaxe"/>
+        <Class IRI="#Pickaxe"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#iron_sword"/>
+        <Class IRI="#Sword"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#planks"/>
+        <Class IRI="#Block"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#seed"/>
+        <Class IRI="#Resource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#stick"/>
+        <Class IRI="#Resource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#stone_pickaxe"/>
+        <Class IRI="#Pickaxe"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#stone_sword"/>
+        <Class IRI="#Sword"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#string"/>
+        <Class IRI="#Resource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#wheet"/>
+        <Class IRI="#Resource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#wood"/>
+        <Class IRI="#Block"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#wooden_pickaxe"/>
+        <Class IRI="#Pickaxe"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#wooden_sword"/>
+        <Class IRI="#Sword"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#workbench"/>
+        <Class IRI="#Block"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#Block"/>
+        <Class IRI="#Pickaxe"/>
+        <Class IRI="#Resource"/>
+        <Class IRI="#Sword"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#bedrock"/>
+        <Class IRI="#coal_ore"/>
+        <Class IRI="#cobblestone"/>
+        <Class IRI="#diamond_ore"/>
+        <Class IRI="#dirt"/>
+        <Class IRI="#furnance"/>
+        <Class IRI="#gold_ore"/>
+        <Class IRI="#grass"/>
+        <Class IRI="#iron_ore"/>
+        <Class IRI="#planks"/>
+        <Class IRI="#wood"/>
+        <Class IRI="#workbench"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#coal"/>
+        <Class IRI="#diamond"/>
+        <Class IRI="#gold"/>
+        <Class IRI="#iron"/>
+        <Class IRI="#seed"/>
+        <Class IRI="#stick"/>
+        <Class IRI="#string"/>
+        <Class IRI="#wheet"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#diamond_pickaxe"/>
+        <Class IRI="#gold_pickaxe"/>
+        <Class IRI="#iron_pickaxe"/>
+        <Class IRI="#stone_pickaxe"/>
+        <Class IRI="#wooden_pickaxe"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#bedrock"/>
+        <NamedIndividual IRI="#bedrock"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#coal"/>
+        <NamedIndividual IRI="#coal"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#coal_ore"/>
+        <NamedIndividual IRI="#coal_ore"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#cobblestone"/>
+        <NamedIndividual IRI="#cobblestone"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#diamond"/>
+        <NamedIndividual IRI="#diamond"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#diamond_ore"/>
+        <NamedIndividual IRI="#diamond_ore"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#diamond_sword"/>
+        <NamedIndividual IRI="#diamond_sword"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#dirt"/>
+        <NamedIndividual IRI="#dirt"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#furnance"/>
+        <NamedIndividual IRI="#furnance"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#gold"/>
+        <NamedIndividual IRI="#gold"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#gold_ore"/>
+        <NamedIndividual IRI="#gold_ore"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#gold_sword"/>
+        <NamedIndividual IRI="#gold_sword"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#grass"/>
+        <NamedIndividual IRI="#grass"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#iron"/>
+        <NamedIndividual IRI="#iron"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#iron_ore"/>
+        <NamedIndividual IRI="#iron_ore"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#iron_sword"/>
+        <NamedIndividual IRI="#iron_sword"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#planks"/>
+        <NamedIndividual IRI="#planks"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#seed"/>
+        <NamedIndividual IRI="#seed"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#stick"/>
+        <NamedIndividual IRI="#stick"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#stone_sword"/>
+        <NamedIndividual IRI="#stone_sword"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectIntersectionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#can_be_crafted"/>
+                <NamedIndividual IRI="#cobblestone"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#can_be_crafted"/>
+                <NamedIndividual IRI="#stick"/>
+            </ObjectHasValue>
+        </ObjectIntersectionOf>
+        <NamedIndividual IRI="#stone_sword"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#string"/>
+        <NamedIndividual IRI="#string"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#wheet"/>
+        <NamedIndividual IRI="#wheet"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Inventory"/>
+        <NamedIndividual IRI="#wood"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#wood"/>
+        <NamedIndividual IRI="#wood"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#wooden_sword"/>
+        <NamedIndividual IRI="#wooden_sword"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectIntersectionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#can_be_crafted"/>
+                <NamedIndividual IRI="#planks"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#can_be_crafted"/>
+                <NamedIndividual IRI="#stick"/>
+            </ObjectHasValue>
+        </ObjectIntersectionOf>
+        <NamedIndividual IRI="#wooden_sword"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#workbench"/>
+        <NamedIndividual IRI="#workbench"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#can_be_melted_down"/>
+        <NamedIndividual IRI="#coal"/>
+        <NamedIndividual IRI="#coal_ore"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#can_be_melted_down"/>
+        <NamedIndividual IRI="#diamond"/>
+        <NamedIndividual IRI="#diamond_ore"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#can_be_melted_down"/>
+        <NamedIndividual IRI="#diamond"/>
+        <NamedIndividual IRI="#coal"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#can_be_crafted"/>
+        <NamedIndividual IRI="#diamond_sword"/>
+        <NamedIndividual IRI="#diamond"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#can_be_crafted"/>
+        <NamedIndividual IRI="#diamond_sword"/>
+        <NamedIndividual IRI="#stick"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#can_be_crafted"/>
+        <NamedIndividual IRI="#furnance"/>
+        <NamedIndividual IRI="#cobblestone"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#can_be_melted_down"/>
+        <NamedIndividual IRI="#gold"/>
+        <NamedIndividual IRI="#coal"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#can_be_melted_down"/>
+        <NamedIndividual IRI="#gold"/>
+        <NamedIndividual IRI="#gold_ore"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#can_be_crafted"/>
+        <NamedIndividual IRI="#gold_sword"/>
+        <NamedIndividual IRI="#gold"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#can_be_crafted"/>
+        <NamedIndividual IRI="#gold_sword"/>
+        <NamedIndividual IRI="#stick"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#can_be_melted_down"/>
+        <NamedIndividual IRI="#iron"/>
+        <NamedIndividual IRI="#coal"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#can_be_melted_down"/>
+        <NamedIndividual IRI="#iron"/>
+        <NamedIndividual IRI="#iron_ore"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#can_be_crafted"/>
+        <NamedIndividual IRI="#iron_sword"/>
+        <NamedIndividual IRI="#stick"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#can_be_crafted"/>
+        <NamedIndividual IRI="#iron_sword"/>
+        <NamedIndividual IRI="#iron"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#can_be_crafted"/>
+        <NamedIndividual IRI="#planks"/>
+        <NamedIndividual IRI="#wood"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#can_be_crafted"/>
+        <NamedIndividual IRI="#stick"/>
+        <NamedIndividual IRI="#planks"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#can_be_crafted"/>
+        <NamedIndividual IRI="#workbench"/>
+        <NamedIndividual IRI="#planks"/>
+    </ObjectPropertyAssertion>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#can_be_crafted"/>
+        <ObjectProperty IRI="#can_craft_to"/>
+    </InverseObjectProperties>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#can_be_crafted"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#can_be_melted_down"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#can_craft_to"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#can_meltdown_to"/>
+    </IrreflexiveObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#can_be_crafted"/>
+        <Class IRI="#Item"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#can_be_melted_down"/>
+        <Class IRI="#Item"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#can_craft_to"/>
+        <Class IRI="#Item"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#can_meltdown_to"/>
+        <Class IRI="#Item"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#can_be_crafted"/>
+        <Class IRI="#Item"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#can_be_melted_down"/>
+        <Class IRI="#Item"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#can_craft_to"/>
+        <Class IRI="#Item"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#can_meltdown_to"/>
+        <Class IRI="#Item"/>
+    </ObjectPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+

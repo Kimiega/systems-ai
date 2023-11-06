@@ -1,0 +1,29 @@
+sword(stone_sword).
+block(dirt).
+block(skyblock).
+pickaxe(gold_pickaxe).
+resource(olovo).
+item(stone).
+item(kirieshki).
+item(X).
+
+recipe([wood], X).
+
+Inv = [wood, planks, iron_sword], 
+not(can_craft(Inv, dirt)), 
+can_craft(Inv, planks), 
+craft(Inv, planks, Inv2).
+
+Inv = [stick, gold, iron, diamond, diamond],
+available_crafts(Inv, [X | _]),
+craft(Inv, X, Inv2).
+
+Inv = [wood, iron_ore, iron_ore],
+not(can_craft(Inv, iron_sword)),
+craft(Inv, planks, Inv2),
+craft(Inv2, stick, Inv3),
+get_item(coal, Inv3, Inv4),
+get_item(coal, Inv4, Inv5),
+meltdown(Inv5, iron, Inv6),
+meltdown(Inv6, iron, Inv7),
+craft(Inv7, iron_sword, Inv8).
